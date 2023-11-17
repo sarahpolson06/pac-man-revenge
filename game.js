@@ -369,7 +369,6 @@ class ZigZagRandomSizeAliveFood extends ZigZagAliveFood{
     }
     draw(ctx) {
         super.draw(ctx);
-        console.log('dynamic radius',this.radius);
     }
 }
 class Game{
@@ -633,7 +632,7 @@ class Level{
     }
 
     keydown(evt) {
-        console.log(evt);
+    
         switch (evt.key) {
             case "Escape":
                 // Toggle game pause state
