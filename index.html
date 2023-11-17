@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Animating balls and adding input fields</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+<div id="controls">
+    <label for="ballSpeed">Change enemies speed: </label>
+    - <input type="range" value='1'
+             min=0.1 max=3 step=0.1
+             oninput="changeBallSpeed(this.value);"
+             id="ballSpeed"> +
+    <p></p>
+
+</div>
+    <div id="gameSettings"></div>
+    <canvas id="pacman" width="600" height="600"></canvas>
+    <script src="game.js"></script>
+
+</body>
+</html>
